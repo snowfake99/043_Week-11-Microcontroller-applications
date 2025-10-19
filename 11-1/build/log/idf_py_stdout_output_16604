@@ -1,0 +1,128 @@
+Command: C:\Users\doise\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\doise\esp\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\doise\Desktop\67030043_Week11\043_Week-11-Microcontroller-applications\11-1\build\11-1.elf C:\Users\doise\Desktop\67030043_Week11\043_Week-11-Microcontroller-applications\11-1\build\bootloader\bootloader.elf --force-color -m 'C:\Users\doise\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\doise\esp\v5.5.1\esp-idf\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 24 2025 14:35:47[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a0d4h ( 41172) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001a0fc vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001c4fc vaddr=40080000 size=03b1ch ( 15132) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1467ch ( 83580) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=000346a4 vaddr=40083b1c size=09494h ( 38036) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003db40 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (184) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     11-1[0m
+[0;32mI (187) app_init: App version:      5a0da61[0m
+[0;32mI (191) app_init: Compile time:     Sep 24 2025 14:33:22[0m
+[0;32mI (196) app_init: ELF file SHA256:  e42571929...[0m
+[0;32mI (201) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (204) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (208) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (212) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (216) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (223) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (228) heap_init: At 3FFB2CC8 len 0002D338 (180 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (238) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;32mI (250) spi_flash: detected chip: generic[0m
+[0;32mI (253) spi_flash: flash io: dio[0m
+[0;33mW (256) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (268) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (276) main_task: Started on CPU0[0m
+[0;32mI (286) main_task: Calling app_main()[0m
+ADC Value: 855, Voltage: 0.69 V
+ADC Value: 1112, Voltage: 0.90 V
+ADC Value: 1262, Voltage: 1.02 V
+ADC Value: 1444, Voltage: 1.16 V
+ADC Value: 1443, Voltage: 1.16 V
+ADC Value: 1481, Voltage: 1.19 V
+ADC Value: 1443, Voltage: 1.16 V
+ADC Value: 1424, Voltage: 1.15 V
+ADC Value: 1412, Voltage: 1.14 V
+ADC Value: 1352, Voltage: 1.09 V
+ADC Value: 1304, Voltage: 1.05 V
+ADC Value: 1262, Voltage: 1.02 V
+ADC Value: 1069, Voltage: 0.86 V
+ADC Value: 1020, Voltage: 0.82 V
+ADC Value: 975, Voltage: 0.79 V
+ADC Value: 999, Voltage: 0.81 V
+ADC Value: 906, Voltage: 0.73 V
+ADC Value: 893, Voltage: 0.72 V
+ADC Value: 825, Voltage: 0.66 V
+ADC Value: 751, Voltage: 0.61 V
+ADC Value: 685, Voltage: 0.55 V
+ADC Value: 592, Voltage: 0.48 V
+ADC Value: 608, Voltage: 0.49 V
+ADC Value: 652, Voltage: 0.53 V
+ADC Value: 641, Voltage: 0.52 V
+ADC Value: 612, Voltage: 0.49 V
+ADC Value: 590, Voltage: 0.48 V
+ADC Value: 562, Voltage: 0.45 V
+ADC Value: 487, Voltage: 0.39 V
+ADC Value: 438, Voltage: 0.35 V
+ADC Value: 379, Voltage: 0.31 V
+ADC Value: 541, Voltage: 0.44 V
+ADC Value: 501, Voltage: 0.40 V
+ADC Value: 464, Voltage: 0.37 V
+ADC Value: 439, Voltage: 0.35 V
+ADC Value: 405, Voltage: 0.33 V
+ADC Value: 380, Voltage: 0.31 V
+ADC Value: 354, Voltage: 0.29 V
+ADC Value: 324, Voltage: 0.26 V
+ADC Value: 284, Voltage: 0.23 V
+ADC Value: 257, Voltage: 0.21 V
+ADC Value: 227, Voltage: 0.18 V
+ADC Value: 192, Voltage: 0.15 V
+ADC Value: 169, Voltage: 0.14 V
+ADC Value: 145, Voltage: 0.12 V
+ADC Value: 129, Voltage: 0.10 V
+ADC Value: 129, Voltage: 0.10 V
+ADC Value: 125, Voltage: 0.10 V
+ADC Value: 122, Voltage: 0.10 V
+ADC Value: 67, Voltage: 0.05 V
+ADC Value: 33, Voltage: 0.03 V
+ADC Value: 23, Voltage: 0.02 V
+ADC Value: 23, Voltage: 0.02 V
+ADC Value: 26, Voltage: 0.02 V
+ADC Value: 21, Voltage: 0.02 V
+ADC Value: 11, Voltage: 0.01 V
+ADC Value: 0, Voltage: 0.00 V
+ADC Value: 0, Voltage: 0.00 V
+ADC Value: 0, Voltage: 0.00 V
+ADC Value: 0, Voltage: 0.00 V
+ADC Value: 0, Voltage: 0.00 V
+ADC Value: 0, Voltage: 0.00 V
+ADC Value: 0, Voltage: 0.00 V
+ADC Value: 50, Voltage: 0.04 V
+ADC Value: 207, Voltage: 0.17 V
+ADC Value: 293, Voltage: 0.24 V
+ADC Value: 452, Voltage: 0.36 V
+ADC Value: 543, Voltage: 0.44 V
+ADC Value: 624, Voltage: 0.50 V
+ADC Value: 702, Voltage: 0.57 V
